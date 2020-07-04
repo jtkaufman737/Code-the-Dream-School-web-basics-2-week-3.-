@@ -121,6 +121,8 @@ const battleship = () => {
       alert('Miss! Better luck next time')
     }
   }
+
+  return evaluateWinner() 
 }
 
 const gameResult = battleship()
