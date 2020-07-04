@@ -1,25 +1,81 @@
 * {
   margin: 0;
   padding: 0;
+  font-family:'Press Start 2P', cursive;
+}
+
+html {
+  display:flex;
+  justify-content:space-around;
+  vertical-align:center;
+  background-image:url('./img/planet_bg.jpg');
+  background-size:cover;
 }
 
 body {
-  min-height: 100vh;
-  width: 100%;
-  background: #ddd;
+  height:50vh;
+  width: 60vw;
+  display:block;
+  text-align:center;
 }
 
 h1 {
-  margin-bottom: 0.5em;
+  margin:auto;
+  padding:1rem;
 }
 
 .content-main {
-  max-width: 800px;
+  width:100%;
   margin: 0 auto;
   margin-top: 100px;
+  background-color:white;
+  opacity:0.8;
 }
 
 .game-container {
   background: white;
   padding: 1em;
+  height:25rem;
+  display:block;
+  text-align:center;
+}
+
+p#result {
+  margin:auto;
+}
+
+div.tile-default {
+  width:50px;
+  height:50px;
+  margin:2px;
+  background-color:purple;
+}
+
+div.tile-empty {
+  width:50px;
+  height:50px;
+  margin:2px;
+  background-color:#ff0ba0;
+}
+
+div.tile-hit {
+  width:50px;
+  height:50px;
+  margin:2px;
+  background-color:#04d538;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+div#boardWrapper {
+  display:flex;
+  justify-content:space-between;
+  padding-left:20%;
+  padding-right:20%;
+  padding-top:5rem;
+}
+
+div.row {
+  display:flex;
 }
